@@ -60,7 +60,7 @@ function draw() {
     textSize(ts);
     let hoursToGo = d["hour"]-hour();
     let minutesToGo = d["minute"]-minute();
-    let secondsToGo = second();
+    let secondsToGo = 59-second();
 
     hoursToGo = (hoursToGo < 0) ? hoursToGo = 23-hour()+d["hour"] : hoursToGo;
     minutesToGo = (minutesToGo < 0) ? minutesToGo = 59-hour()+d["hour"] : minutesToGo;
